@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Meta tags for character set, rendering mode, and responsive design -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
+    <title>My Portfolio</title>
+      <!-- External stylesheets for styling -->
+      <!-- editable under style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+  <!-- Navigation bar for desktop -->
+    <nav id="desktop-nav">
+      <!-- Class of HTML -->
+      <div class="logo">John Doe</div>
+      <div>
+        <ul class="nav-links">
+          <!-- This Shows the about, expirence, projects, and contact info text on the top right -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <nav id="hamburger-nav">
+      <!-- Hamburger icon and logo for phone or smaller screens -->
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+           <!-- Hamburger icon shows three lines -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      <!-- Menu links for mobile users(mobile compatability) -->
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- profile body -->
+    <section id="profile">
+    <!-- Container for profile picture -->
+      <div class="section__pic-container">
+
+
+
+        <!--input your picture under assets folder. Ex: use format ./assets/<name.jpeg>  --> 
+          <!-- alt is a text description of the image for developer use  -->
+        <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
+      </div>
+
+
+      <!-- Editable text you can change introduction-->
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">John Doe</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+
+
+
+
+   <!--This is where you can add a pdf or word doc of your resume use file pathing-->
+  <!-- Button to download your resume-->
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download Resume
+          </button>
+
+    <!-- Contact Info Button-->
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+
+
+
+
+      <!-- Linkedin image logo-->
+      <!-- Enter your linkedin link on "onclick="location.href"    -->
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+
+
+
+
+        <!--github icon logo -->
+      <!-- Enter your github link on "onclick="location.href"    -->
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+
+<!--Action after you click about button    -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+
+
+
+
+<!-- Enter the path of a picture of yourself in the line src=     -->
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+
+
+
+          <!-- Expirence Badge Icon you can change it to something else enter filepath-->
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <!-- editable text-->
+              <h3>Experience</h3>
+              <p>20+ years <br />Frontend Development</p>
+            </div>
+
+            <!-- education container-->
+            <!-- education picture png it is editable-->
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+      
+            <!-- editable text-->
+          <div class="text-container">
+            <p>
+            This is a short or even a long description that you guys can put about yourself 
+            or a summary of what you are doing
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- arrow image to show you can scroll down-->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    <!-- Action here tells what happens if you click on expirence at the top-->
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">My</p>      
+      <h1 class="title">Expirences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>   <!--You can edit this as you need -->
+            <div class="article-container">
+              <article>
+                
+                <!--You can edit this as you need -->
+                <!--This is the checkmark icon picture -->
+                <img
+                  src="./assets/checkmark.png"  
+                  alt="Experience icon"
+                  class="icon"
+                />
+
+
+
+
+          <!--You can copy and paste this chunk below to list more expirence -->
+
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+             <div>
+            <h3>Material UI</h3>
+            <p>Intermediate</p>
+         <!--You can copy and paste this chunk above for more expirence -->
+
+         
+  
+
+        <!--Second Container where you can highlight other things -->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Other Expirences</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+
+      <!--You can edit this to start another expirence in second container -->
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+
+
+      <!--You can copy and paste this chunk below for more expirence on the second container -->
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Node JS</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+
+      <!--You can copy and paste this chunk above for more expirence on the second container -->
+
+
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+
+
+
+      <!--You can copy and paste this chunk below for 3 more projects   -->
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <p>
+              This is a short description of the project. You can add more
+              details here.
+            </p>
+            <div class="btn-container">
+              <!--You can change link   -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'" 
+              >
+                Github
+              </button>
+                <!--You can change link   -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <p>
+              This is a short description of the project. You can add more
+              details here.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <p>
+              This is a short description of the project. You can add more
+              details here.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+           </div>
+      </div>        
+      <!--You can copy and paste this chunk above for more projects   -->
+      
+
+
+      <!--Arrow to show to scroll down -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+
+     <!--Arrow to show to scroll down -->
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <!--change the picture to the desired one and enter file path in src="./assets/email.png"  -->
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>   <!--change to your desired email  -->
+
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>  <!--change to your desired linkedin  -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>  <!--change to your copyright if you want  -->
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
